@@ -1,7 +1,7 @@
 two wire sniff
 ==============
 
-This is a  minimal AyTiny AVR firmware that  will listen to a TWI  (I2C) bus and
+This is a  minimal AtTiny AVR firmware that  will listen to a TWI  (I2C) bus and
 store all data on EEPROM. It's simple, but will probably require some getting to
 know before  any modifications can  be done. I'm sorry  for the assembly,  but I
 really needed fine control over execution and timing.
