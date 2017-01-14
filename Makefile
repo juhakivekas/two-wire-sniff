@@ -19,5 +19,9 @@ two-wire-sniff.hex:two-wire-sniff.o
 flash: hex
 	avrdude -v -c usbtiny -p $(MCU) -U flash:w:two-wire-sniff.hex:i 
 
+#this needs sudo/raw usb access
+dump:
+	avrdude -v -c usbtiny -p $(MCU) -U eeprom:r:eeprom-dump.hex:i
+
 clean:
 	rm -f two-wire-sniff.o two-wire-sniff.hex
